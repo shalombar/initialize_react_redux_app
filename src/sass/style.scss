@@ -1,0 +1,64 @@
+.App{
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        text-align: center;
+        background-color: aqua;
+        padding: 0.5em;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    .myStore{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+
+        .products{
+            display: flex;
+            flex-direction: row;
+            .product{
+                border: 1px solid black;
+                width: 7em;
+                margin-left: 1em;
+
+                &.selected{
+                    background-color: cornflowerblue;
+                }
+                .productDetails{
+                    margin-top: 0;
+                    .productImg{
+                        width: 4em;
+                        height: 4em;
+                        background: url('../images/new-product-22853660.jpg') no-repeat center;
+                        background-size: cover;
+                        margin: 0 auto;
+                    }
+                    .productName{}
+                    .productDescription{}
+                }
+ 
+                .deleteBtn{}
+            }
+        }
+
+        .productDetails{
+            margin-top: 3em;
+
+            .productImg{
+                width: 4em;
+                height: 4em;
+                background: url('../images/new-product-22853660.jpg') no-repeat center;
+                background-size: cover;
+                margin-top: 1em;
+            }
+
+            .inputs{
+                font-size: 0.7em;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
